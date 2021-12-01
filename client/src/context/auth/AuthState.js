@@ -97,9 +97,9 @@ const login  = async formData => {
     }
 }
 
-// lougout 
+// logout 
 
-const lougout = () => console.log('lougout User');
+const logout = () => dispatch({type: LOGOUT});
 // Clear errors 
 
 const clearErrors = () => dispatch({type: CLEAR_ERRORS});
@@ -117,7 +117,7 @@ return (
       register,
       loadUser,
       login,
-      lougout,
+      logout,
       clearErrors
     }}
     
